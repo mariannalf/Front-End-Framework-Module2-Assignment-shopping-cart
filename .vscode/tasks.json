@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": {
+				"base": "$tsc-watch",
+				"background": {
+					"activeOnStart": true,
+					"beginsPattern": {
+						"regexp": ".*compiling.*"
+					},
+					"endsPattern": {
+						"regexp": ".*compiled.*"
+					}
+				},
+				"applyTo": "allDocuments"
+			},
+			"label": "npm: start",
+			"detail": "react-scripts start",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true,
+			}
+		}
+	]
+}
